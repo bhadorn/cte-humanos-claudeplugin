@@ -1,0 +1,40 @@
+{
+  "CollectionId": "c7fb2c24-9721-45af-b57d-31a225631cb8",
+  "EntityName": "ReportSchema",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "c7fb2c24-9721-45af-b57d-31a225631cb8",
+      "Id": "9db14fc1-ed14-4b87-974f-194e4d481009",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "9db14fc1-ed14-4b87-974f-194e4d481009",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "Hall.TemperatureGraph",
+        "Description": "Line chart of the hall temperature",
+        "SchemaType": "Chart",
+        "ConfigEx": null,
+        "Config": {
+          "ChartType": "Line",
+          "SourceType": "Stream",
+          "SourceName": "HallTemperature",
+          "Fields": {
+            "ValueFormat": "{0:F1}",
+            "LabelFormat": "{0:HH:mm}"
+          },
+          "DataSet": [
+            {
+              "Label": "$HallTemperature",
+              "SourceFieldName": "Temperature",
+              "Color": "#C62828"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

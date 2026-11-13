@@ -1,0 +1,42 @@
+{
+  "CollectionId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+  "EntityName": "Hall",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+      "Id": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a01",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a01",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "Hall 1",
+        "Description": "",
+        "OpcNodeName": "Hall1.Temperature",
+        "OwnerTenantId": "<TENANT-ID>",
+        "AdditionalTenantIds": []
+      }
+    },
+    {
+      "CollectionId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+      "Id": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a02",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a02",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "Hall 2",
+        "Description": "",
+        "OpcNodeName": "Hall2.Temperature",
+        "OwnerTenantId": "<TENANT-ID>",
+        "AdditionalTenantIds": []
+      }
+    }
+  ]
+}

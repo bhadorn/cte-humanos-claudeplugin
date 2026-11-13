@@ -1,0 +1,12 @@
+{
+  "DisplayName": "$HallMonitoring",
+  "Icon": "thermostat",
+  "Policy": "POLICY_Operator",
+  "SubMenu": [
+    {
+      "DisplayName": "$Halls",
+      "Icon": "list",
+      "Path": "/Hall/ListView"
+    }
+  ]
+}

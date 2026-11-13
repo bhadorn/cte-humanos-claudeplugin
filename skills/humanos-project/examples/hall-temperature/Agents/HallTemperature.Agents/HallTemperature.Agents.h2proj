@@ -1,0 +1,140 @@
+{
+  "Path": "HallTemperature.Agents.h2proj",
+  "Name": "HallTemperature.Agents",
+  "Description": "Hall temperature monitoring: OPC UA nodes to platform stream HallTemperature",
+  "Author": "",
+  "AutoIncrementPublishNumber": true,
+  "PlatformPublishTokenSecret": "",
+  "PlatformURL": "",
+  "SecurityMode": "NotSet",
+  "SyntaxVersion": "2.0",
+  "Version": "1.0.0",
+  "DeviceTemplates": [
+    {
+      "DriverId": "f022ee3c-a2a5-428a-b588-46abacae39ee",
+      "Path": "HallTemperatureOpcUa_v1.json",
+      "Id": "220787ac-dc5e-4a8b-84d0-0af518fe2c5e",
+      "Name": "HallTemperatureOpcUa_v1",
+      "Description": ""
+    }
+  ],
+  "SecretDatabase": {
+    "Secrets": [],
+    "Id": "33008df7-3a3d-412d-a929-82041dc657e4",
+    "Name": "Secrets Database",
+    "Description": ""
+  },
+  "Targets": [
+    {
+      "Path": "HallAgent",
+      "Id": "18920900-cbea-4e7b-b518-90e7ebf4cd07",
+      "Name": "HallAgent",
+      "DisplayName": "Hall temperature agent",
+      "Description": "",
+      "DirectoryPublishPath": "",
+      "LicenseRefreshIntervalHours": 24,
+      "OutPath": "$(Project.Directory)\\Build\\$(Target.Name)\\",
+      "Protected": true,
+      "PublishDestination": "Directory",
+      "PublishScript": "",
+      "PublishScriptArguments": "",
+      "PlatformLogMinimumLevel": "Warning",
+      "PlatformLogSecretId": "",
+      "PlatformLogUrl": "",
+      "PlatformToken": "",
+      "Runtime": "HumanOS.IoT.Runtime win-x86 TRIAL",
+      "RuntimeVersion": "2.12",
+      "ServiceDescription": "",
+      "ServiceDisplayName": "HumanOS.IoT.Gateway for $(Target.Name)",
+      "ServiceName": "HumanOS.IoT.Gateway.$(Target.Name)",
+      "ServiceStartType": "Automatic",
+      "SharedNodeSpacePluginId": "0dae9067-44eb-40b9-9385-dd6efb353e11",
+      "AppSettings": {
+        "AppConfig.LogMinimumLevel": "Information",
+        "AppConfig.LogRetentionDays": "7",
+        "HumanOS.ServiceId": "d22c86d7-66ce-4e28-bb04-6650d1dad00f",
+        "HumanOS.ServiceName": "HumanOS.IoT.Gateway.$(Target.Name)",
+        "HumanOS.LocalNodeSpace.Type": "HumanOS.Kernel.DataModel.Space.TInMemoryNodeSpace, HumanOS.Kernel",
+        "HumanOS.Repository.Type": "",
+        "HumanOS.Repository.Connection": "",
+        "Serilog.WriteTo[?(@.Name == 'File')].Args.path": "$(AppConfig:CommonAppPath)Logs\\$(HumanOS:ServiceName)-.log",
+        "HumanOS.RuntimeVersion": "2.12",
+        "SecretManager.Path": "$(AppSettingsDir)Secrets\\",
+        "HumanOS.SharedNodeSpace.Type": "HumanOS.PeMiL.MQTTMessageBus.TSharedNodeSpaceHub, HumanOS.PeMiL.MQTTMessageBus",
+        "HumanOS.SharedNodeSpace.Address": "<PLATFORM-MQTT-BROKER-HOST>",
+        "HumanOS.SharedNodeSpace.MasterSystemControllerId": "<PLATFORM-SERVICE-ID>",
+        "HumanOS.SharedNodeSpace.MasterAgentOrchestratorId": "<PLATFORM-SERVICE-ID>",
+        "CertificateManager.Path": "$(AppSettingsDir)Config\\CertificateSources\\"
+      },
+      "VaultKeyEnvironmentVariableName": "HumanOSVaultKey",
+      "DataModel": {
+        "Objects": [],
+        "Rules": [],
+        "Schema": [],
+        "Path": "DataModel",
+        "Name": "DataModel"
+      },
+      "Devices": [
+        {
+          "Address": "opc.tcp://<OPC-UA-SERVER-HOST>:4840",
+          "DeviceTemplateId": "220787ac-dc5e-4a8b-84d0-0af518fe2c5e",
+          "DriverId": "f022ee3c-a2a5-428a-b588-46abacae39ee",
+          "SubDevices": [],
+          "Type": "OPC-UA",
+          "Variables": [
+            {
+              "Name": "OpcNameSpace",
+              "DataType": "System.String",
+              "Value": "ns=2"
+            }
+          ],
+          "Path": "HallTemperatureServer.json",
+          "Id": "a4b61ee7-6361-4082-a5ff-0cacd07299e8",
+          "Name": "HallTemperatureServer",
+          "Description": "OPC UA server with one temperature node per hall"
+        }
+      ],
+      "Plugins": [
+        {
+          "CustomFiles": [],
+          "ScriptFiles": [],
+          "Path": "HumanOS.UHAL.DeviceDetectors",
+          "Id": "9d078b95-6322-44d2-989d-87a1fca283b9",
+          "Name": "HumanOS.UHAL.DeviceDetectors",
+          "Description": ""
+        },
+        {
+          "CustomFiles": [],
+          "ScriptFiles": [],
+          "Path": "HumanOS.UHAL.OpcUaControl",
+          "Id": "f022ee3c-a2a5-428a-b588-46abacae39ee",
+          "Name": "HumanOS.UHAL.OpcUaControl",
+          "Description": ""
+        },
+        {
+          "CustomFiles": [],
+          "ScriptFiles": [
+            {
+              "Path": "HallTemperaturePayload.cs",
+              "Id": "6211bbf9-19aa-4b5d-9c52-4f6e22977a5b",
+              "Name": "HallTemperaturePayload.cs",
+              "Description": ""
+            }
+          ],
+          "Path": "HumanOS.PeSeL.NodeSpaceDataLogger",
+          "Id": "f433a67f-4216-4baa-9cbe-555fd4905682",
+          "Name": "HumanOS.PeSeL.NodeSpaceDataLogger",
+          "Description": ""
+        }
+      ],
+      "Scripts": {
+        "Commands": [],
+        "Processing": [],
+        "Rules": [],
+        "Workflows": [],
+        "Path": "Scripts",
+        "Name": "Scripts"
+      }
+    }
+  ]
+}

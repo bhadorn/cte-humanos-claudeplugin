@@ -1,0 +1,10 @@
+{
+  "name": "humanos",
+  "version": "0.1.0",
+  "description": "HumanOS tools: documentation links, glossary and skills to build HumanOS Runtime agents (IoT Designer, BuildTool, gateway) and to configure the HumanOS Platform (models, streams, dashboards, reports, actions, imports).",
+  "author": {
+    "name": "CyberTech Engineering GmbH"
+  },
+  "homepage": "https://doc.cybertech.swiss/platform/intro",
+  "keywords": ["humanos", "iot", "iot-designer", "buildtool", "platform", "cybertech"]
+}

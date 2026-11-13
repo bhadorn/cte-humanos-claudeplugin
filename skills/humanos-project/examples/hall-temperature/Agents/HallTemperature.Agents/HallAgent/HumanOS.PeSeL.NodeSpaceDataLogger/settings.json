@@ -1,0 +1,82 @@
+{
+  "Disabled": false,
+  "Publishers": [
+    {
+      "Id": "552de716-7f75-43b0-9406-5df8001c537a",
+      "Name": "HallTemperatureLogger",
+      "Connection": "DE891DEF-4478-4A38-BB89-533F669AF645",
+      "ConnectionSecret": "",
+      "DataSets": [
+        {
+          "Name": "HallTemperature",
+          "Type": "DataNode",
+          "NodeFilter": "node.hasProperty<bool>(\"EnableHallTemperature\", true)",
+          "Tag": "",
+          "Properties": {},
+          "Fields": [
+            {
+              "Name": "Id",
+              "DataType": "System.Guid",
+              "Query": "item.GlobalId",
+              "Tag": "",
+              "Properties": {}
+            },
+            {
+              "Name": "Name",
+              "DataType": "System.String",
+              "Query": "item.Node.Name",
+              "Tag": "",
+              "Properties": {}
+            },
+            {
+              "Name": "HallId",
+              "DataType": "System.Guid",
+              "Query": "item.Node.getProperty<Guid>(\"HallId\")",
+              "Tag": "",
+              "Properties": {}
+            },
+            {
+              "Name": "TimeStamp",
+              "DataType": "System.DateTime",
+              "Query": "item.TimeStamp",
+              "Tag": "",
+              "Properties": {}
+            },
+            {
+              "Name": "Value",
+              "DataType": "System.Object",
+              "Query": "item.Value",
+              "Tag": "",
+              "Properties": {}
+            },
+            {
+              "Name": "State",
+              "DataType": "System.Int32",
+              "Query": "item.DataState",
+              "Tag": "",
+              "Properties": {}
+            }
+          ]
+        }
+      ],
+      "NetworkTimeout": 5000,
+      "PayloadDumpEnabled": true,
+      "PayloadDumpFileName": "$(AppConfig:CommonAppPath)\\Dumps\\NodeSpaceDataLogger\\HallTemperatureLogger.log",
+      "PayloadDumpRetentionTime": 2,
+      "PayloadScriptFile": "HallTemperaturePayload.cs",
+      "SamplerType": "OnlyLastValue",
+      "SamplingRate": 10,
+      "ProcessOnlyValidData": true,
+      "Properties": {},
+      "ServiceRule": {
+        "BindingRuleId": "f1dc1abb-8f3e-4ef2-bed7-33e075c7eb92",
+        "Devices": [],
+        "Drivers": [],
+        "UnbindingRuleId": "cd3bba9d-5ddf-40ad-bbb5-5ac87e5042f6",
+        "Type": "All",
+        "Properties": {}
+      }
+    }
+  ],
+  "Properties": {}
+}

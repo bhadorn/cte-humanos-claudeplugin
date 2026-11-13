@@ -1,0 +1,37 @@
+{
+  "CollectionId": "87451eac-4fbb-4c07-8b40-dc212f1a351e",
+  "EntityName": "NotificationSource",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "87451eac-4fbb-4c07-8b40-dc212f1a351e",
+      "Id": "76f2ff22-7370-4818-9229-b045b9b48c92",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "76f2ff22-7370-4818-9229-b045b9b48c92",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "Hall Over Temperature",
+        "Description": "Raised when a hall reports more than 30 degree Celsius",
+        "Kind": "Stream",
+        "Type": "Warning",
+        "SourceStreamId": "c2ceb7ab-e05b-42dd-8601-da86cba41961",
+        "RefModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+        "RefEntityId": "00000000-0000-0000-0000-000000000000",
+        "NotificationModel": "00000000-0000-0000-0000-000000000000",
+        "TriggerCondition": "n.readField<double>(\"Temperature\", 0) > 30",
+        "DelayTime": "00:00:30",
+        "CoolDownTime": "01:00:00",
+        "NotificationTitle": "{{ \"$HallOverTemperature\" | translate }} {{ object.Name }}",
+        "MessageTemplate": "{{ \"$HallOverTemperatureText\" | translate }}\n{{ object.Name }}: {{ data.Fields.Temperature }} °C\n{{ timestamp | date: \"%d.%m.%Y %H:%M\" }}",
+        "ShortMessageTemplate": "{{ object.Name }}: {{ data.Fields.Temperature }} °C",
+        "PipelineTemplateId": "00000000-0000-0000-0000-000000000000",
+        "PipelineStatuses": "",
+        "Policies": []
+      }
+    }
+  ]
+}

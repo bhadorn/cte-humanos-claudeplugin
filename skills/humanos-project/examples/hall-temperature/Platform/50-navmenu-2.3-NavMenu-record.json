@@ -1,0 +1,43 @@
+{
+  "CollectionId": "154c705e-db86-41a9-ad20-018cfe41d652",
+  "EntityName": "NavMenu",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "154c705e-db86-41a9-ad20-018cfe41d652",
+      "Id": "6eb4bac8-9baa-4f3a-a3f2-62b4f942fe4f",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "6eb4bac8-9baa-4f3a-a3f2-62b4f942fe4f",
+        "BuiltIn": true,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "NavigationMenu",
+        "ApplicationId": "15127dce-0176-4bc5-ac0d-371305708fc5",
+        "Schema": {
+          "SubMenu": [
+            {
+              "DisplayName": "$Home",
+              "Path": "/",
+              "Icon": "space_dashboard"
+            },
+            {
+              "DisplayName": "$HallMonitoring",
+              "Icon": "thermostat",
+              "Policy": "POLICY_Operator",
+              "SubMenu": [
+                {
+                  "DisplayName": "$Halls",
+                  "Icon": "list",
+                  "Path": "/Hall/ListView"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

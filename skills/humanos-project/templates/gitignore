@@ -1,0 +1,28 @@
+# Copy to the repository root as ".gitignore"
+
+# HumanOS IoT Designer / BuildTool output and runtime data
+**/Build/
+
+# Licenses, secrets and certificates never go into git
+*.lic
+src/Licenses/
+**/.humanos/Licenses/
+**/Secrets/
+*.pfx
+*.pem
+*.key
+
+# Downloaded agent configuration packages (rollout/publish downloads) contain agent secrets and licenses.
+# Keep them in one folder and ignore that folder; a broad *.zip rule would also hide legitimate archives.
+**/ConfigPackages/
+**/Packages/Downloaded/
+
+# Customer data exports and full instance snapshots (Platform.Config layout)
+**/Exports/
+Snapshot/
+
+# Local tooling
+.vs/
+.vscode/*
+!.vscode/extensions.json
+*.user

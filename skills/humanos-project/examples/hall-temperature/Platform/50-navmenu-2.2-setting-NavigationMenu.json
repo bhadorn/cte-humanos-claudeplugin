@@ -1,0 +1,25 @@
+{
+  "CollectionId": "949be6a9-9428-46be-82bb-b19910b1dada",
+  "EntityName": "Setting",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "949be6a9-9428-46be-82bb-b19910b1dada",
+      "Id": "<ID-OF-EXISTING-NavigationMenu-SETTING>",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "<ID-OF-EXISTING-NavigationMenu-SETTING>",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "NavigationMenu",
+        "DataType": "JObject",
+        "Description": "",
+        "DisplayRank": 0,
+        "Value": "{\"SubMenu\":[{\"DisplayName\":\"$Home\",\"Path\":\"/\",\"Icon\":\"space_dashboard\"},{\"DisplayName\":\"$HallMonitoring\",\"Icon\":\"thermostat\",\"Policy\":\"POLICY_Operator\",\"SubMenu\":[{\"DisplayName\":\"$Halls\",\"Icon\":\"list\",\"Path\":\"/Hall/ListView\"}]}]}"
+      }
+    }
+  ]
+}

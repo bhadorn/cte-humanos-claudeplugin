@@ -1,0 +1,8 @@
+{
+  "FileName": "",
+  "Ids": {
+    "a4b61ee7-6361-4082-a5ff-0cacd07299e8/HallTemperatureOpcUa_v1": "220787ac-dc5e-4a8b-84d0-0af518fe2c5e",
+    "a4b61ee7-6361-4082-a5ff-0cacd07299e8/HallTemperatureOpcUa_v1/Hall1Temperature": "6227f929-b55a-44e5-9b2d-ffb7c1c61ba8",
+    "a4b61ee7-6361-4082-a5ff-0cacd07299e8/HallTemperatureOpcUa_v1/Hall2Temperature": "f6a5782c-55f5-43cb-9f95-35dafa107651"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "humanos",
+  "description": "Claude Code plugins for HumanOS by CyberTech Engineering.",
+  "owner": {
+    "name": "CyberTech Engineering GmbH"
+  },
+  "plugins": [
+    {
+      "name": "humanos",
+      "source": "./",
+      "description": "HumanOS documentation links, glossary and skills to build Runtime agents and configure the HumanOS Platform."
+    }
+  ]
+}

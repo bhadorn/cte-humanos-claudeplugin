@@ -1,0 +1,100 @@
+{
+  "Id": "220787ac-dc5e-4a8b-84d0-0af518fe2c5e",
+  "Name": "HallTemperatureOpcUa_v1",
+  "DriverId": "f022ee3c-a2a5-428a-b588-46abacae39ee",
+  "Address": "",
+  "Properties": [
+    {
+      "Name": "opc:AutoGenerateClientCertificate",
+      "DataType": "System.Boolean",
+      "Value": "true"
+    },
+    {
+      "Name": "opc:CertificateHandling",
+      "DataType": "System.String",
+      "Value": "AcceptAll"
+    },
+    {
+      "Name": "opc:SecuritySelection",
+      "DataType": "System.String",
+      "Value": "None"
+    },
+    {
+      "Name": "opc:Session.ConnectDisconnectTimeout",
+      "DataType": "System.Int32",
+      "Value": "30000"
+    },
+    {
+      "Name": "opc:Session.ReconnectDelay",
+      "DataType": "System.Int32",
+      "Value": "10000"
+    },
+    {
+      "Name": "opc:Subscription.PublishingInterval",
+      "DataType": "System.Int32",
+      "Value": "1000"
+    }
+  ],
+  "DataNodes": [
+    {
+      "Id": "6227f929-b55a-44e5-9b2d-ffb7c1c61ba8",
+      "Name": "Hall1Temperature",
+      "Address": "$(OpcNameSpace);s=Hall1.Temperature",
+      "DataType": "System.Double",
+      "Unit": "°C",
+      "Access": {
+        "Read": true,
+        "ReadConversion": {},
+        "Receive": true,
+        "WriteConversion": {}
+      },
+      "Properties": [
+        {
+          "Name": "EnableHallTemperature",
+          "DataType": "System.Boolean",
+          "Value": "true"
+        },
+        {
+          "Name": "HallId",
+          "DataType": "System.Guid",
+          "Value": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a01"
+        }
+      ]
+    },
+    {
+      "Id": "f6a5782c-55f5-43cb-9f95-35dafa107651",
+      "Name": "Hall2Temperature",
+      "Address": "$(OpcNameSpace);s=Hall2.Temperature",
+      "DataType": "System.Double",
+      "Unit": "°C",
+      "Access": {
+        "Read": true,
+        "ReadConversion": {},
+        "Receive": true,
+        "WriteConversion": {}
+      },
+      "Properties": [
+        {
+          "Name": "EnableHallTemperature",
+          "DataType": "System.Boolean",
+          "Value": "true"
+        },
+        {
+          "Name": "HallId",
+          "DataType": "System.Guid",
+          "Value": "3f6c1b52-8d0a-4e7b-9a41-5c2e7d8b1a02"
+        }
+      ]
+    }
+  ],
+  "ConstantNodes": [],
+  "Commands": [],
+  "Groups": [],
+  "Variables": [
+    {
+      "Name": "OpcNameSpace",
+      "DataType": "System.String",
+      "Value": "ns=2"
+    }
+  ]
+}

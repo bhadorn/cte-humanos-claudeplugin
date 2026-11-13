@@ -1,0 +1,61 @@
+{
+  "CollectionId": "09a313d2-b9e4-4d54-99c2-b95b0c21a707",
+  "EntityName": "StreamModel",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "09a313d2-b9e4-4d54-99c2-b95b0c21a707",
+      "Id": "c2ceb7ab-e05b-42dd-8601-da86cba41961",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "c2ceb7ab-e05b-42dd-8601-da86cba41961",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "HallTemperature",
+        "DisplayName": "$HallTemperature",
+        "Description": "Temperature per hall. RefId correlates with Hall.Id",
+        "TableName": "streams.halltemperature",
+        "RefModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+        "RetentionDays": 365,
+        "StoreDuplicatedEntries": true,
+        "EnableWatchDog": true,
+        "WatchDogTimeoutMs": 60000,
+        "WatchDogDataMessage": null,
+        "ParentStreamId": "00000000-0000-0000-0000-000000000000",
+        "ParentFieldMapping": null,
+        "PreprocessingScript": "",
+        "RestrictedWrite": false,
+        "DisableRestReports": false,
+        "DisableManualChanges": false,
+        "HideDataState": false,
+        "Fields": [
+          {
+            "CollectionId": "ce0737e6-d4e0-41b6-b817-9f6175670ac9",
+            "Id": "e78ea768-db57-4df2-b0f7-3f323a6e62ce",
+            "TimeStamp": null,
+            "Fields": {
+              "Id": "e78ea768-db57-4df2-b0f7-3f323a6e62ce",
+              "BuiltIn": false,
+              "IsTemplate": false,
+              "LifeCycleState": 1,
+              "TemplateId": "00000000-0000-0000-0000-000000000000",
+              "StreamModelId": "c2ceb7ab-e05b-42dd-8601-da86cba41961",
+              "Name": "Temperature",
+              "DisplayName": "$HallTemperature",
+              "Description": "Hall temperature in degree Celsius",
+              "DataType": "System.Double",
+              "DefaultValue": "",
+              "NonPersistant": false,
+              "ReferencedCollectionId": "00000000-0000-0000-0000-000000000000",
+              "ReferencedFieldName": "Id",
+              "ReferenceType": "Unspecified"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

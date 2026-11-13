@@ -1,0 +1,300 @@
+{
+  "CollectionId": "505eda80-a750-4cbd-bed8-d2fcf771f4e4",
+  "EntityName": "Model",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "505eda80-a750-4cbd-bed8-d2fcf771f4e4",
+      "Id": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "Hall",
+        "DisplayName": "$Hall",
+        "Description": "A production hall whose temperature is monitored.",
+        "TableName": "plant.halls",
+        "Type": "SimpleCollection",
+        "Abstract": false,
+        "BaseModelId": "d8149cee-bc85-47b9-a14e-60a3c79a354d",
+        "Inheritance": [
+          "b0ae50be-597b-4a68-ab25-ca5fdbd76b00",
+          "d8149cee-bc85-47b9-a14e-60a3c79a354d"
+        ],
+        "MasterCollectionId": "00000000-0000-0000-0000-000000000000",
+        "ActionConfiguration": {
+          "create": {
+            "ExecutionPolicy": "POLICY_TenantAdmin",
+            "PipelineTemplateId": "00000000-0000-0000-0000-000000000000"
+          },
+          "update": {
+            "ExecutionPolicy": "POLICY_TenantAdmin",
+            "PipelineTemplateId": "00000000-0000-0000-0000-000000000000"
+          },
+          "delete": {
+            "ExecutionPolicy": "POLICY_TenantAdmin",
+            "PipelineTemplateId": "00000000-0000-0000-0000-000000000000"
+          },
+          "clone": {
+            "ExecutionPolicy": "POLICY_TenantAdmin",
+            "PipelineTemplateId": "00000000-0000-0000-0000-000000000000"
+          }
+        },
+        "Actions": [],
+        "Fields": [
+          {
+            "CollectionId": "18797c62-1f80-421e-9e1c-8a0faa98cfa7",
+            "Id": "2a95879c-fa15-4fc1-801c-27d0f2ee55c9",
+            "TimeStamp": null,
+            "Fields": {
+              "Id": "2a95879c-fa15-4fc1-801c-27d0f2ee55c9",
+              "BuiltIn": false,
+              "IsTemplate": false,
+              "LifeCycleState": 1,
+              "TemplateId": "00000000-0000-0000-0000-000000000000",
+              "ModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+              "Name": "OpcNodeName",
+              "DisplayName": "$HallOpcNodeName",
+              "Description": "Name of the OPC UA node that reports the temperature of this hall",
+              "DataType": "System.String",
+              "Length": 0,
+              "ArraySize": 0,
+              "Units": "",
+              "Acronym": "",
+              "Icon": "",
+              "EditMode": "Changeable",
+              "InputMethod": "Manual",
+              "AutoGeneratorPattern": "",
+              "DefaultValue": "",
+              "Required": false,
+              "Uniqueness": "None",
+              "DisplayRank": 1,
+              "EnabledExpression": "",
+              "VisibilityExpression": "",
+              "ReferencedCollectionId": "00000000-0000-0000-0000-000000000000",
+              "ReferencedFieldName": "",
+              "ReferenceType": "Unspecified",
+              "EntitySelectionExpression": "",
+              "ProvidedForLinks": false,
+              "OmittedFromLists": false,
+              "Policy": "",
+              "NonPersistant": false,
+              "ValidationSchema": null,
+              "Notifications": null,
+              "DependOnFields": [],
+              "JoinOperator": "None",
+              "IsKey": false
+            }
+          }
+        ],
+        "Views": [
+          {
+            "CollectionId": "de1c0351-9ed5-4ae9-8a29-160b839dd45e",
+            "Id": "b1b194b7-58fc-4b72-8934-1ae842bbf4d6",
+            "TimeStamp": null,
+            "Fields": {
+              "Id": "b1b194b7-58fc-4b72-8934-1ae842bbf4d6",
+              "BuiltIn": true,
+              "IsTemplate": false,
+              "LifeCycleState": 1,
+              "TemplateId": "00000000-0000-0000-0000-000000000000",
+              "Description": "",
+              "ModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+              "Name": "DetailsDashboard",
+              "Policy": "",
+              "Type": "DetailsView",
+              "Schema": {
+                "EntitySchema": null,
+                "IncludeChildEntitiesAsTabs": true,
+                "Tabs": [
+                  {
+                    "Title": "$Info",
+                    "ListView": null,
+                    "Dashboard": {
+                      "Menu": null,
+                      "Rows": [
+                        {
+                          "Columns": [
+                            {
+                              "Value": 6,
+                              "Widgets": [
+                                {
+                                  "ToolMenu": null,
+                                  "Buttons": [],
+                                  "HideDescription": false,
+                                  "IconName": null,
+                                  "Name": "EntityDetailsWidget",
+                                  "Properties": {},
+                                  "Title": null,
+                                  "CardStyle": null,
+                                  "VisibleFields": [
+                                    "Id",
+                                    "Name",
+                                    "OpcNodeName",
+                                    "OwnerTenantId",
+                                    "AdditionalTenantIds"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Value": 6,
+                              "Widgets": [
+                                {
+                                  "ToolMenu": null,
+                                  "Buttons": [],
+                                  "HideDescription": false,
+                                  "IconName": null,
+                                  "Name": "EntityStatusWidget",
+                                  "Properties": {},
+                                  "Title": null,
+                                  "CardStyle": null,
+                                  "VisibleFields": [
+                                    "LifeCycleState",
+                                    "CreatedAt",
+                                    "CreatedBy",
+                                    "LastChangedAt",
+                                    "LastChangedBy"
+                                  ]
+                                },
+                                {
+                                  "Name": "EntityDescriptionWidget"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "CollectionId": "de1c0351-9ed5-4ae9-8a29-160b839dd45e",
+            "Id": "79b00ee7-fe1e-44fb-8361-4b0f981c3c13",
+            "TimeStamp": null,
+            "Fields": {
+              "Id": "79b00ee7-fe1e-44fb-8361-4b0f981c3c13",
+              "BuiltIn": true,
+              "IsTemplate": false,
+              "LifeCycleState": 1,
+              "TemplateId": "00000000-0000-0000-0000-000000000000",
+              "Description": "",
+              "ModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+              "Name": "ListView",
+              "Policy": "",
+              "Type": "ListView",
+              "Schema": {
+                "DisplayName": "$Halls",
+                "UsePagination": true,
+                "UsePaginationSize": 50,
+                "DetailsViewName": "HallDashboard",
+                "Columns": [
+                  {
+                    "FieldName": "Name"
+                  },
+                  {
+                    "FieldName": "OpcNodeName"
+                  },
+                  {
+                    "FieldName": "LifeCycleState",
+                    "Width": "100px"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "CollectionId": "de1c0351-9ed5-4ae9-8a29-160b839dd45e",
+            "Id": "2be0cb97-40a1-4882-ae21-ff11fe32bf55",
+            "TimeStamp": null,
+            "Fields": {
+              "Id": "2be0cb97-40a1-4882-ae21-ff11fe32bf55",
+              "BuiltIn": false,
+              "IsTemplate": false,
+              "LifeCycleState": 1,
+              "TemplateId": "00000000-0000-0000-0000-000000000000",
+              "Description": "Live temperature and chart of one hall",
+              "ModelId": "a13c4a80-d850-4122-a69d-0282b3cd6071",
+              "Name": "HallDashboard",
+              "Policy": "POLICY_Operator",
+              "Type": "DetailsView",
+              "Schema": {
+                "EntitySchema": null,
+                "Tabs": [
+                  {
+                    "Title": "$Info",
+                    "ListView": null,
+                    "Dashboard": {
+                      "Menu": {
+                        "Items": [
+                          {
+                            "ActionName": "refresh",
+                            "DisplayName": "$Refresh",
+                            "Icon": "refresh"
+                          }
+                        ]
+                      },
+                      "Rows": [
+                        {
+                          "Columns": [
+                            {
+                              "Value": 4,
+                              "Widgets": [
+                                {
+                                  "Name": "LifeValueWidget",
+                                  "Title": "$HallTemperatureLive",
+                                  "IconName": "thermostat",
+                                  "Properties": {
+                                    "StreamName": "HallTemperature",
+                                    "FieldName": "Temperature",
+                                    "StreamEntityField": "RefId",
+                                    "Format": "F1",
+                                    "Units": "°C"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "Value": 8,
+                              "Widgets": [
+                                {
+                                  "Name": "EntityChartWidget",
+                                  "Title": "$HallTemperature24h",
+                                  "ToolMenu": [
+                                    {
+                                      "Icon": "refresh",
+                                      "ActionName": "refresh"
+                                    }
+                                  ],
+                                  "Properties": {
+                                    "ReportSchemaName": "Hall.TemperatureGraph",
+                                    "AutoRefresh": true,
+                                    "Height": "15rem",
+                                    "Filter": "entity.RefId == Guid.Parse(\"$(Id)\")",
+                                    "HideDataLabels": true,
+                                    "LineMarkers": "None"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

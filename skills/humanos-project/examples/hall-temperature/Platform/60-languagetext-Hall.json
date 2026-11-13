@@ -1,0 +1,152 @@
+{
+  "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+  "EntityName": "LanguageText",
+  "ExportedBy": null,
+  "ExportedAt": null,
+  "Entities": [
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "7f8598d0-5b86-4040-9921-cd2392ba7e0d",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "7f8598d0-5b86-4040-9921-cd2392ba7e0d",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$Hall",
+        "EN": "Hall",
+        "DE": "Halle",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "119d1581-0b9f-4c9f-b23f-9fb7a81fb915",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "119d1581-0b9f-4c9f-b23f-9fb7a81fb915",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$Halls",
+        "EN": "Halls",
+        "DE": "Hallen",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "516d66f7-55f4-4396-883b-9a20e14f866a",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "516d66f7-55f4-4396-883b-9a20e14f866a",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallMonitoring",
+        "EN": "Hall monitoring",
+        "DE": "Hallenueberwachung",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "ee4daf83-41ad-42c1-bd43-0ed6a8505dc3",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "ee4daf83-41ad-42c1-bd43-0ed6a8505dc3",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallOpcNodeName",
+        "EN": "OPC UA node",
+        "DE": "OPC-UA-Knoten",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "cf7ca375-257e-49b9-b213-ebc1f44f015b",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "cf7ca375-257e-49b9-b213-ebc1f44f015b",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallTemperature",
+        "EN": "Temperature",
+        "DE": "Temperatur",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "5b35f96f-a7c4-497c-aee5-6cbf67094ae9",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "5b35f96f-a7c4-497c-aee5-6cbf67094ae9",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallTemperatureLive",
+        "EN": "Temperature now",
+        "DE": "Temperatur aktuell",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "57a121fd-0ca9-43d9-b5cd-446466eff27e",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "57a121fd-0ca9-43d9-b5cd-446466eff27e",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallTemperature24h",
+        "EN": "Temperature last 24 hours",
+        "DE": "Temperatur letzte 24 Stunden",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "7f927ce9-7e06-4036-990e-9610c7932335",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "7f927ce9-7e06-4036-990e-9610c7932335",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallOverTemperature",
+        "EN": "Hall too warm:",
+        "DE": "Halle zu warm:",
+        "Description": ""
+      }
+    },
+    {
+      "CollectionId": "8ea18705-73b9-46e7-87ce-f9fe1098e49b",
+      "Id": "fa8b8dcc-1316-44da-9211-ccd6a80a0d6b",
+      "TimeStamp": null,
+      "Fields": {
+        "Id": "fa8b8dcc-1316-44da-9211-ccd6a80a0d6b",
+        "BuiltIn": false,
+        "IsTemplate": false,
+        "LifeCycleState": 1,
+        "TemplateId": "00000000-0000-0000-0000-000000000000",
+        "Name": "$HallOverTemperatureText",
+        "EN": "A hall reports more than 30 degree Celsius.",
+        "DE": "Eine Halle meldet mehr als 30 Grad Celsius.",
+        "Description": ""
+      }
+    }
+  ]
+}
